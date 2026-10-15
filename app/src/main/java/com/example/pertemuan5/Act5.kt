@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.unit.dp
 
@@ -78,7 +79,8 @@ fun FormDataDiri(modifier: Modifier) {
                 bottom = dimensionResource(R.dimen.p_md),
                 top = dimensionResource(R.dimen.p_md)
             ),
-            thickness = dimensionResource(R.dimen.div_height)
+            thickness = dimensionResource(R.dimen.div_height),
+            color = Color.DarkGray
         )
     }
 }
