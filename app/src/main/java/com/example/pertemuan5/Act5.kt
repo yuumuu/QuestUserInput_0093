@@ -55,8 +55,8 @@ fun FormDataDiri(modifier: Modifier) {
                         selected = textGender == item,
                         onClick = {
                             textGender = item
-                        }
-                    )
+                        })
+                    Text(item)
                 }
             }
         }
