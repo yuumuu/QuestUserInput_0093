@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="p_sm">10dp</dimen>
+    <dimen name="p_md">30dp</dimen>
+    <dimen name="div_tipis">1dp</dimen>
+</resources>
