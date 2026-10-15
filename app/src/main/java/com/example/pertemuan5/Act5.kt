@@ -1,12 +1,16 @@
 package com.example.pertemuan5
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Button
 import androidx.compose.material3.CardDefaults
@@ -43,7 +47,8 @@ fun FormDataDiri(modifier: Modifier) {
 
     Column(modifier = Modifier.padding(top = 50.dp),
         verticalArrangement = Arrangement.Top,
-        horizontalAlignment = Alignment.CenterHorizontally) {
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
         OutlinedTextField(
             value = textNama,
             singleLine = true,
@@ -115,13 +120,13 @@ fun FormDataDiri(modifier: Modifier) {
             elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
             colors = CardDefaults.cardColors(containerColor = Color.Black),
             modifier = Modifier
-                .height(100.dp)
+                .wrapContentHeight()
                 .width(300.dp)
         ) {
             Column(modifier = Modifier.padding(
                 horizontal = 5.dp,
                 vertical = 15.dp)) {
-                Text(text = "Nama : $nama", color = Color.White)
+                Text(text = "Nama   : $nama", color = Color.White)
                 Text(text = "Gender : $gender", color = Color.White)
                 Text(text = "Alamat : $alamat", color = Color.White)
             }

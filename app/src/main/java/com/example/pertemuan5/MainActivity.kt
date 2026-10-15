@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Pertemuan5Theme {
+            Pertemuan5Theme(darkTheme = false) {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     FormDataDiri(
                         modifier = Modifier.padding(innerPadding)
