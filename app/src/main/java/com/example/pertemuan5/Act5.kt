@@ -88,7 +88,7 @@ fun FormDataDiri(modifier: Modifier) {
         Button(
             modifier = Modifier.fillMaxWidth(1f),
             // the button is enabled when the user makes a selection
-            enabled = textAlamat.isNotBlank(),
+            enabled = textAlamat.isNotBlank() && textGender.isNotBlank() && textNama.isNotBlank(),
             onClick = {}
         ) { }
     }
